@@ -1,0 +1,14 @@
+@import"variable";
+@import"reset";
+@import"mixin";
+@import"util";
+//全站樣式
+@import"base";
+
+//表頭表尾共通區塊
+@import"layout";
+
+//pages 頁面
+@import"pages/index";
+@import"pages/location";
+@import"pages/qa";

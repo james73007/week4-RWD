@@ -1,0 +1,69 @@
+.banner{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+    height: 840px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .banner-content{
+        color: #650300;
+        
+    }
+    .title{
+        font-size: 64px;
+        font-weight: bold;
+    }
+    .subTitle{
+        font-size: 36px;
+    }
+}
+// @media(max-width:992px){
+//     background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);
+//     .title{
+//         font-size: 48px;
+//     }
+
+// }
+@media(max-width:767px){
+    .title{
+        font-size: 32px;
+    }
+
+}
+.contact{
+    background-color: #AA06010D;
+
+    textarea{
+        resize: none;
+    }
+}
+
+
+.profile-list-item{
+    width: 23%;
+    @include pad{
+        width: 48%;
+    }
+    @include mobile{
+        width: 100%;
+    }
+}
+.classical-list-item{
+    li:nth-child(2){
+        @include pad{
+            flex-direction: row-reverse;
+        }
+    }
+    img{
+        @include mobile{
+            position: relative;
+        }
+    }
+    .ttt{
+        @include mobile{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}

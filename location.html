@@ -1,10 +1,26 @@
----
-title: 門市據點
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>門市據點</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1><a href="index.html"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true" alt="logo.png"></a></h1>
+    <ul class="menu">
+      <li><a href="#">系列鏡框</a></li>
+      <li><a href="location.html">門市據點</a></li>
+      <li><a href="#">部落格</a></li>
+      <li><a href="qa.html">常見問題</a></li>
+    </ul>
+  </header>
+
+  
 <div class="location  pt-96 pb-160">
     <div class="container">
         <h2>門市據點</h2>
@@ -130,3 +146,48 @@ current: index
         </ul>
     </div>
 </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-head-content d-flex justify-content-between">
+        <div class="box">
+          <ul class="footer-menu">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="location.html">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="qa.html">常見問題</a></li>
+          </ul>
+          <div class="contact-phone d-flex align-items-center mb-2">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-phone.svg" alt=""><a class="text-white"  href="tel:to:0800-000-000">0800-000-000</a>
+          </div>
+          <div class="contact-mail d-flex align-items-center mb-2 ">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-mail.svg" alt=""><a  class="text-white" href="mailto:glasses@business.com">glasses@business.com</a>
+          </div>
+
+        </div>
+        <ul class="social-link d-flex">
+          <li class="mr-4"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-fb.svg" alt=""></li>
+          <li class="mr-4"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-ig.svg" alt=""></li>
+          <li><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-line.svg" alt=""></li>
+        </ul>
+      </div>
+      <div class="footer-body d-flex justify-content-between text-white">
+        <span>Copyright © 2020 Glasses.All rights reserved.</span>
+        <div class="copy-text d-flex">
+          <p class="mr-6">隱私權政策</p>
+          <p>服務條款</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

@@ -9,12 +9,14 @@ current: index
     <div class="container">
         <h2>門市據點</h2>
         <div class="select-zone mb-4">
-            <label for="zone">選擇地區 </label>
-            <select name="" id="zone" class="border-color">
-                <option value="台北市">台北市</option>
-                <option value="台中市">台中市</option>
-                <option value="新竹市">新竹市</option>
-            </select>
+            <form action="">
+                <label for="zone">選擇地區 </label>
+                <select name="" id="zone" class=" select-city">
+                    <option value="台北市">台北市</option>
+                    <option value="台中市">台中市</option>
+                    <option value="新竹市">新竹市</option>
+                </select>
+            </form>
         </div>
         <ul class="location-list  d-flex flex-wrap">
             <li class="location-list-item">
@@ -23,7 +25,7 @@ current: index
                 <ul class="shop-info">
                     <li class="shop-info-item  mb-1  d-flex"> 
                             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-phone-black.svg" alt=""> 
-                            <span> 電話：(02)000-1234</span>
+                            <a> 電話：(02)000-1234</a>
     
                     </li>
                     <li class="shop-info-item  mb-1 d-flex"> 

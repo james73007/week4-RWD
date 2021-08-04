@@ -13,10 +13,12 @@
     margin-right: 30px;
     @include pad{
         width: 45%;
+        
     }
     @include mobile{
         width: 100%;
         margin-right: 0;
+        margin-bottom: 16px;
     }
     margin-bottom: 32px;
     border: 1px solid  #00000020;
@@ -41,6 +43,16 @@
         @include pad{
             font-weight: bold;
         }
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+}
+@include pad{
+    .location-list-item{
+        &:nth-child(even){
+            margin-right: 0;
+        }
     }
 }
 .location{
@@ -57,18 +69,15 @@
         @include mobile{
             font-size: 28px;
             margin-bottom: 24px;
+            padding-left: 8px;
+            border-left: 4px solid #9F1213;
         }
-
-    }
-    .border-color{
-        border: 1px solid #CED4DA;
-        height: 45px;
     }
 }
 .select-zone{
     label{
         font-size: 24px;
-        margin-right: 20px;
+        margin-right: 20px; 
         @include pad{
             font-size: 16px;
         }
@@ -77,12 +86,22 @@
             margin-right: 12px;
         }
     }
+    @include mobile{
+        margin-bottom: 20px;
+    }
+}
+.select-city{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    width: 237px;
+    border: 1px solid #CED4DA;
 }
 .shop-info-item{
     img{
         margin-right: 10px;
     }
-    span{
+    span{ 
         font-size: 14px;
     }
 }

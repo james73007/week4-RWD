@@ -1,5 +1,5 @@
 .qa{
-    @include mobile{
+    @include pad{
         padding-top: 60px;
         padding-bottom: 96px;
     }
@@ -48,6 +48,9 @@
         }
         @include mobile{
             margin-bottom: 20px;
+            padding-left: 0;
         }
     }
+
+    
 }

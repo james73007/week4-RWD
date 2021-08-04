@@ -1,8 +1,10 @@
 .header{
     background-color: $bg-primary;
-    padding: 30px 88px;
+    padding: 0 88px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
     @include mobile{
         flex-direction: column;
         padding: 0;
@@ -12,7 +14,6 @@
             margin: 0 auto;
             padding: 10px 0;
         }
-
     }
     .menu{
         display: flex;
@@ -21,24 +22,43 @@
         
         li{
             font-size: 20px;
-            margin-right: 64px;
+            &:nth-child(4){
+                margin-right: 0;
+            }
+        
             @include mobile{
                 width: 50%;
                 margin-right: 0;
                 text-align: center;
                 border: 1px solid #fff;
-                padding: 8px 0;
+                // padding: 8px 0;
             }
         }
         a{
+            padding: 38px 32px 41px 32px;
             color: #fff;
-            // font-size: 20px;
             &:hover{
-                color: aqua;
+               background:pink;
             }
         }
     }
 }
+@include pad{
+    .header{
+        padding: 0 39px;
+    }
+}
+@include mobile{
+    .header{
+        padding: 0;
+        .menu{
+            a{
+                padding: 0;
+            }
+        }
+    }
+}
+//表尾區塊
 .footer{
     background-color:$bg-primary;
     padding-top: 32px;
@@ -121,19 +141,18 @@
     }
 }
 .social-link{
-    li{
-        @include pad{
-            margin-right: 24px;
-        }
-    }
     img{
         @include pad{
             width: 24px;
             height: 24px;
-            margin-right: 24px;
             &:nth-child(3){
                 margin-right: 0;
             }
+        }
+    }
+    a{
+        &:hover{
+            background: aqua;
         }
     }
 }
@@ -156,6 +175,10 @@
         @include mobile{
             margin-bottom: 8px;
             font-size: 14px;
+        }
+    }a{
+        &:hover{
+            color: #000;
         }
     }
 }

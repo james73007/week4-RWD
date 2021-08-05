@@ -1,6 +1,6 @@
 .header{
     background-color: $bg-primary;
-    padding: 0 88px;
+    padding: 0  56px 0 88px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,6 @@
             &:nth-child(4){
                 margin-right: 0;
             }
-        
             @include mobile{
                 width: 50%;
                 margin-right: 0;
@@ -40,20 +39,27 @@
             &:hover{
                background:pink;
             }
+            @include pad{
+                padding:  38px 20px 41px 20px;
+            }
         }
     }
 }
 @include pad{
     .header{
-        padding: 0 39px;
+        padding: 0 19px 0  39px;
     }
 }
 @include mobile{
     .header{
-        padding: 0;
+        padding: 0 ;
+    }
+}
+@include mobile{
+    .header{
         .menu{
             a{
-                padding: 0;
+                padding:8px  0;
             }
         }
     }
@@ -86,7 +92,6 @@
             display: none;
         }
     }
-    
 }
 .footer-head-content{
     border-bottom: 1px solid #fff;
@@ -108,6 +113,9 @@
     }
     a{
         font-size: 36px;
+        &:hover{
+            color: #000;
+        }
         @include pad{
             font-size: 20px;
         }
@@ -132,6 +140,9 @@
     }
     a{
         font-size: 36px;
+        &:hover{
+            color: #000;
+        }
         @include pad{
             font-size: 20px;
         }

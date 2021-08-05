@@ -11,28 +11,17 @@
 .location-list-item{
     width: 30.333%;
     margin-right: 30px;
+    margin-bottom: 32px;
+    border: 1px solid  #00000020;
     @include pad{
         width: 45%;
-        
+        margin-bottom: 20px;
     }
     @include mobile{
         width: 100%;
         margin-right: 0;
         margin-bottom: 16px;
-    }
-    margin-bottom: 32px;
-    border: 1px solid  #00000020;
-    a{
-        display: block;
-        background-color:#000000;
-        border: 1px solid  #00000020;
-        color: #fff;
-        padding: 20px 0;
-        font-size: 19px;
-        &:hover{
-            background-color: $bg-primary;
-        }
-    }
+    } 
     .shop-info{
         padding: 16px 24px;
     }
@@ -42,8 +31,6 @@
         border: 1px solid  #00000020;
         @include pad{
             font-weight: bold;
-        }
-        @include mobile{
             font-size: 16px;
         }
     }
@@ -97,7 +84,16 @@
     width: 237px;
     border: 1px solid #CED4DA;
 }
+.shop-info{
+    a{
+        color: #000;
+    }
+}
 .shop-info-item{
+    font-size: 20px;
+    @include pad{
+        font-size: 14px;
+    }
     img{
         margin-right: 10px;
     }
@@ -105,3 +101,18 @@
         font-size: 14px;
     }
 }
+.shop-info-link{
+    display: block;
+    background-color:#000000;
+    border: 1px solid  #00000020;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 19px;
+    &:hover{
+        background-color: $bg-primary;
+    }
+    @include pad{
+        font-size: 14px;
+        padding: 16px 0;
+    }
+} 

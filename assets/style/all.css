@@ -45,11 +45,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block; }
-
 .margin-auto {
   margin: 0 auto; }
 
@@ -144,6 +139,11 @@ a {
   display: block;
   text-decoration: none; }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -151,7 +151,7 @@ a {
 
 .header {
   background-color: #AA0601;
-  padding: 0 88px;
+  padding: 0  56px 0 88px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,20 +202,29 @@ a {
       color: #fff; }
       .header .menu a:hover {
         background: pink; }
+      @media (max-width: 992px) {
+        .header .menu a {
+          padding: 38px 20px 41px 20px; }
+          .header .menu a .container {
+            max-width: 720px; } }
 
 @media (max-width: 992px) {
   .container {
     max-width: 720px; }
   .header {
-    padding: 0 39px; } }
+    padding: 0 19px 0  39px; } }
 
 @media (max-width: 767px) {
   .container {
     max-width: 375px; }
   .header {
-    padding: 0; }
-    .header .menu a {
-      padding: 0; } }
+    padding: 0; } }
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 375px; }
+  .header .menu a {
+    padding: 8px  0; } }
 
 .footer {
   background-color: #AA0601;
@@ -272,6 +281,8 @@ a {
 
 .contact-phone a {
   font-size: 36px; }
+  .contact-phone a:hover {
+    color: #000; }
   @media (max-width: 992px) {
     .contact-phone a {
       font-size: 20px; }
@@ -302,6 +313,8 @@ a {
 
 .contact-mail a {
   font-size: 36px; }
+  .contact-mail a:hover {
+    color: #000; }
   @media (max-width: 992px) {
     .contact-mail a {
       font-size: 20px; }
@@ -377,7 +390,8 @@ a {
   border: 1px solid  #00000020; }
   @media (max-width: 992px) {
     .location-list-item {
-      width: 45%; }
+      width: 45%;
+      margin-bottom: 20px; }
       .location-list-item .container {
         max-width: 720px; } }
   @media (max-width: 767px) {
@@ -387,15 +401,6 @@ a {
       margin-bottom: 16px; }
       .location-list-item .container {
         max-width: 375px; } }
-  .location-list-item a {
-    display: block;
-    background-color: #000000;
-    border: 1px solid  #00000020;
-    color: #fff;
-    padding: 20px 0;
-    font-size: 19px; }
-    .location-list-item a:hover {
-      background-color: #AA0601; }
   .location-list-item .shop-info {
     padding: 16px 24px; }
   .location-list-item h3 {
@@ -404,14 +409,10 @@ a {
     border: 1px solid  #00000020; }
     @media (max-width: 992px) {
       .location-list-item h3 {
-        font-weight: bold; }
-        .location-list-item h3 .container {
-          max-width: 720px; } }
-    @media (max-width: 767px) {
-      .location-list-item h3 {
+        font-weight: bold;
         font-size: 16px; }
         .location-list-item h3 .container {
-          max-width: 375px; } }
+          max-width: 720px; } }
 
 @media (max-width: 992px) {
   .container {
@@ -468,11 +469,36 @@ a {
   width: 237px;
   border: 1px solid #CED4DA; }
 
-.shop-info-item img {
-  margin-right: 10px; }
+.shop-info a {
+  color: #000; }
 
-.shop-info-item span {
-  font-size: 14px; }
+.shop-info-item {
+  font-size: 20px; }
+  @media (max-width: 992px) {
+    .shop-info-item {
+      font-size: 14px; }
+      .shop-info-item .container {
+        max-width: 720px; } }
+  .shop-info-item img {
+    margin-right: 10px; }
+  .shop-info-item span {
+    font-size: 14px; }
+
+.shop-info-link {
+  display: block;
+  background-color: #000000;
+  border: 1px solid  #00000020;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 19px; }
+  .shop-info-link:hover {
+    background-color: #AA0601; }
+  @media (max-width: 992px) {
+    .shop-info-link {
+      font-size: 14px;
+      padding: 16px 0; }
+      .shop-info-link .container {
+        max-width: 720px; } }
 
 @media (max-width: 992px) {
   .qa {
